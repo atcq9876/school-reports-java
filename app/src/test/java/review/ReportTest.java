@@ -9,4 +9,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.format(), "Green: 1");
     }
+
+    @Test public void testSingleAmberInput() {
+      String grade = "Amber";
+      Report report = new Report(grade);
+      assertEquals(report.format(), "Amber: 1");
+    }
 }
