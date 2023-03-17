@@ -34,6 +34,7 @@ public class Report {
     if (green > 0) { formattedReport = "Green: " + green; }
     if (green > 0 && amber > 0) { formattedReport += "\n"; }
     if (amber > 0) { formattedReport += ("Amber: " + amber); }
+    if (amber > 0 && red > 0) { formattedReport += "\n"; }
     if (red > 0) { formattedReport += ("Red: " + red); }
     if (uncounted > 0) { formattedReport += ("Uncounted: " + uncounted); }
 
