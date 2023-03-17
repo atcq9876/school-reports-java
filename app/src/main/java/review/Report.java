@@ -10,8 +10,10 @@ public class Report {
   public String format() {
     if (unformattedGrades == "Green") {
       return "Green: 1";
-    } else {
+    } else if (unformattedGrades == "Amber") {
       return "Amber: 1";
+    } else {
+      return "Red: 1";
     }
   }
 }

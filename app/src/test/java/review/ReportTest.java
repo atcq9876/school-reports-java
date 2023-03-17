@@ -15,4 +15,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.format(), "Amber: 1");
     }
+
+    @Test public void testSingleRedInput() {
+      String grade = "Red";
+      Report report = new Report(grade);
+      assertEquals(report.format(), "Red: 1");
+    }
 }
