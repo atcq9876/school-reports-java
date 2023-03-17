@@ -1,7 +1,7 @@
 package review;
 
-import static org.junit.Assert.*;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class ReportTest {
     @Test public void testSingleGreenInput() {
@@ -98,5 +98,17 @@ public class ReportTest {
       String grade = "amber,,green";
       Report report = new Report(grade);
       assertEquals(report.getFormattedReport(), "Green: 1\nAmber: 1");
+    }
+
+    @Test public void testEmptyString() {;
+      Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+        String grade = "";
+        new Report(grade);
+      });
+      
+      String expectedMessage = "Please enter a comma-separated string list of grades";
+      String actualMessage = exception.getMessage();
+
+      assertTrue(actualMessage.contains(expectedMessage));
     }
 }

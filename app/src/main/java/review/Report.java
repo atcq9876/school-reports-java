@@ -8,6 +8,7 @@ public class Report {
   Integer uncounted = 0;
   
   Report (String grades) {
+    if (grades == "") { throw new IllegalArgumentException("Please enter a comma-separated string list of grades"); }
     this.unformattedGradesArray = grades.replaceAll(" ", "").toLowerCase().split(",");
   }
   
