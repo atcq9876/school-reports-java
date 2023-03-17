@@ -14,6 +14,8 @@ public class Report {
       return "Green: 2";
     } else if (unformattedGrades == "Amber, Amber") {
       return "Amber: 2";
+    } else if (unformattedGrades == "Red, Red") {
+      return "Red: 2";
     } else {
       return "Uncounted: 1";
     }

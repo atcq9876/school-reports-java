@@ -39,4 +39,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.getFormattedReport(), "Amber: 2");
     }
+
+    @Test public void testTwoRedValues() {
+      String grade = "Red, Red";
+      Report report = new Report(grade);
+      assertEquals(report.getFormattedReport(), "Red: 2");
+    }
 }
