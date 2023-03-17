@@ -57,4 +57,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.getFormattedReport(), "Amber: 1\nRed: 1");
     }
+
+    @Test public void testTwoMoreDifferentValues2() {
+      String grade = "Uncounted, Red";
+      Report report = new Report(grade);
+      assertEquals(report.getFormattedReport(), "Red: 1\nUncounted: 1");
+    }
 }

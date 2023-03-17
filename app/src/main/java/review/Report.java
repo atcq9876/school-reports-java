@@ -36,6 +36,7 @@ public class Report {
     if (amber > 0) { formattedReport += ("Amber: " + amber); }
     if (amber > 0 && red > 0) { formattedReport += "\n"; }
     if (red > 0) { formattedReport += ("Red: " + red); }
+    if (red > 0 && uncounted > 0) { formattedReport += "\n"; }
     if (uncounted > 0) { formattedReport += ("Uncounted: " + uncounted); }
 
     return formattedReport;
