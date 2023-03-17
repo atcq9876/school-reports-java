@@ -22,6 +22,7 @@ public class Report {
       } else if (grade.equals("red")) {
         red++;
       } else if (grade.equals("")) {
+        continue;
       } else {
         uncounted++;
       }
