@@ -69,4 +69,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.getFormattedReport(), "Green: 1\nRed: 1");
     }
+
+    @Test public void testTwoDifferentNonConsecutiveValues2() {
+      String grade = "Amber, Uncounted";
+      Report report = new Report(grade);
+      assertEquals(report.getFormattedReport(), "Amber: 1\nUncounted: 1");
+    }
 }
