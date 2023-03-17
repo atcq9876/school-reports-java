@@ -7,7 +7,7 @@ public class Report {
     this.unformattedGrades = grades;
   }
 
-  public String format() {
+  public String getFormattedReport() {
     if (unformattedGrades == "Green" || unformattedGrades == "Amber" || unformattedGrades == "Red") {
       return unformattedGrades + ": 1";
     } else if (unformattedGrades == "Green, Green") {
