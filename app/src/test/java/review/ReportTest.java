@@ -81,4 +81,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.getFormattedReport(), "Green: 1\nAmber: 2\nUncounted: 1");
     }
+
+    @Test public void testLowerCaseValues() {
+      String grade = "amber, green, red";
+      Report report = new Report(grade);
+      assertEquals(report.getFormattedReport(), "Green: 1\nAmber: 1\nRed: 1");
+    }
 }

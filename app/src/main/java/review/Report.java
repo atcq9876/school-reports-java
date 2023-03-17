@@ -8,18 +8,18 @@ public class Report {
   Integer uncounted = 0;
   
   Report (String grades) {
-    this.unformattedGradesArray = grades.split(", ");
+    this.unformattedGradesArray = grades.toLowerCase().split(", ");
   }
   
   public void countGrades() {
     for (String grade : unformattedGradesArray) {
       System.out.println(grade);
-      if (grade.equals("Green")) {
+      if (grade.equals("green")) {
         green++;
         System.out.println(green);
-      } else if (grade.equals("Amber")) {
+      } else if (grade.equals("amber")) {
         amber++;
-      } else if (grade.equals("Red")) {
+      } else if (grade.equals("red")) {
         red++;
       } else {
         uncounted++;
