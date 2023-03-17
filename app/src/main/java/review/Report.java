@@ -8,7 +8,7 @@ public class Report {
   Integer uncounted = 0;
   
   Report (String grades) {
-    this.unformattedGradesArray = grades.toLowerCase().split(", ");
+    this.unformattedGradesArray = grades.replaceAll(" ", "").toLowerCase().split(",");
   }
   
   public void countGrades() {

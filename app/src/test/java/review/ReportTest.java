@@ -87,4 +87,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.getFormattedReport(), "Green: 1\nAmber: 1\nRed: 1");
     }
+
+    @Test public void testNoSpaces() {
+      String grade = "amber,green,red";
+      Report report = new Report(grade);
+      assertEquals(report.getFormattedReport(), "Green: 1\nAmber: 1\nRed: 1");
+    }
 }
