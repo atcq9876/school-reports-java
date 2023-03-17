@@ -27,4 +27,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.format(), "Uncounted: 1");
     }
+
+    @Test public void testTwoGreenValues() {
+      String grade = "Green, Green";
+      Report report = new Report(grade);
+      assertEquals(report.format(), "Green: 2");
+    }
 }
