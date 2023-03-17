@@ -21,4 +21,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.format(), "Red: 1");
     }
+
+    @Test public void testUncountedValue() {
+      String grade = "blah";
+      Report report = new Report(grade);
+      assertEquals(report.format(), "Uncounted: 1");
+    }
 }
