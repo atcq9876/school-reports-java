@@ -4,11 +4,9 @@
 package review;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        String grades = "Green, Green";
+        Report report = new Report(grades);
+        System.out.println(report.getFormattedReport());
     }
 }
