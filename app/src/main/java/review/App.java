@@ -5,7 +5,7 @@ package review;
 
 public class App {
     public static void main(String[] args) {
-        String grades = "Green, Green";
+        String grades = "amber,,green";
         Report report = new Report(grades);
         System.out.println(report.getFormattedReport());
     }

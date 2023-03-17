@@ -93,4 +93,10 @@ public class ReportTest {
       Report report = new Report(grade);
       assertEquals(report.getFormattedReport(), "Green: 1\nAmber: 1\nRed: 1");
     }
+
+    @Test public void testDoubleCommas() {
+      String grade = "amber,,green";
+      Report report = new Report(grade);
+      assertEquals(report.getFormattedReport(), "Green: 1\nAmber: 1");
+    }
 }

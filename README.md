@@ -12,6 +12,7 @@ Input                                 Output
 "green"                               "Green: 1"
 "red, brown"                          "Red: 1\nUncounted: 1"
 "Green,amber,Red"                     "Green: 1\nAmber: 1\nRed: 1"
+
 "Green,,Green,Red,"                   "Green: 2\nRed: 1"
 ""                                    Error: "Input should be a comma-separated string"
 non-string value                      Error: "Input should be a comma-separated string"

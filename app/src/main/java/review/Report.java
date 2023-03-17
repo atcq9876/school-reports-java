@@ -16,11 +16,11 @@ public class Report {
       System.out.println(grade);
       if (grade.equals("green")) {
         green++;
-        System.out.println(green);
       } else if (grade.equals("amber")) {
         amber++;
       } else if (grade.equals("red")) {
         red++;
+      } else if (grade.equals("")) {
       } else {
         uncounted++;
       }
