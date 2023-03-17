@@ -1,4 +1,4 @@
-# School reports coding challenge (Java)
+# School Reports Coding Challenge (Java)
 
 ## Description
 School reports
@@ -8,7 +8,6 @@ See below for example input and output of the program.
 
 __Input__                           |   __Output__
 ------------------------------------|--------------------------------------------
-Input                               |  Output
 "Green, Green, Amber, Red, Green"   |  "Green: 3\nAmber: 1\nRed: 1"
 "Green, Green"                      |  "Green: 2"
 "green"                             |  "Green: 1"
